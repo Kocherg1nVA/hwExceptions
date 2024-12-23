@@ -33,7 +33,6 @@ public class Product {
         this.price = price;
     }
 
-    // Вспомогательные методы для корректной работы equals
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,7 +45,4 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id, title, price);
     }
-
-    // геттеры + сеттеры
-    // на id только геттер — пусть будет неизменяемым для товара
 }
